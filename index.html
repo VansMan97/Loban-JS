@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Test</title>
+ </head>
+ <body>
+    <input value="Задание 1" onclick="button1()" type="button">
+        <script>
+            function button1(){
+                var firstTaskNumber = prompt("Введите число: ");
+                if(Number(firstTaskNumber) > 7 ){
+                    alert("Привет!");
+                }
+                else{
+                    alert("Данное число меньше или равно 7.");
+                }
+            }
+        </script>
+    <input value="Задание 2" onclick="button2()" type="button">
+        <script>
+            function button2(){
+                var secondTaskName = prompt("Введите имя:");
+                if(secondTaskName == "Вячеслав"){
+                    alert("Привет, Вячеслав!");
+                }
+                else{
+                    alert("Нет такого имени.");
+                }
+            }
+        </script>
+    <input value="Задание 3" onclick="button3()" type="button">
+        <script>
+            function button3(){
+                var thirdTaskArray =[];
+                var count = 5;
+                    for (var i=0; i<count; i++)
+                    thirdTaskArray[i]=parseInt(prompt("Введите целое число:"));
+               alert(thirdTaskArray.filter(elem => elem % 3 == 0 && elem != 0));
+            }
+        </script>
+        <hr>
+        <h4>Задание 4</h4>
+        <p>Данная скобочная последовательность не является правильной.<br>Правильный ответ: <b>[((())()(()))]</b></p>
+ </body>
